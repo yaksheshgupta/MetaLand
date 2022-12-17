@@ -34,6 +34,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<page.Home/>}/>
+          <Route path="/sell" exact element={<page.Frm/>}/>
         </Routes>
       </Router>
     </WagmiConfig>

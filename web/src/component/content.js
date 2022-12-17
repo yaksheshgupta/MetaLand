@@ -5,7 +5,14 @@ import JsonData from "../data"
 export function Content() {
     return (
         <>
-            <div className="content">
+            <div style={{ fontSize: "xxx-large", textAlign: "center", color: "whitesmoke", margin: "2rem" }}>
+                Content
+            </div>
+            <div className="content"  >
+            <div style={{ fontSize: "xx-large", textAlign: "center", color: "whitesmoke", margin: "2rem" }}>
+                BestSellers!!
+            </div>
+            <div>
                 {JsonData.product.map(s => {
                     return (
                         <>
@@ -13,6 +20,7 @@ export function Content() {
                         </>
                     )
                 })}
+                </div>
                 4gr
             </div>
         </>
@@ -20,10 +28,10 @@ export function Content() {
 }
 // import { useAccount } from 'wagmi';
 export const Card = (s) => {
-    const num=(a)=>{
-        if(a%2==0){
+    const num = (a) => {
+        if (a % 2 == 0) {
             return true
-        }else{
+        } else {
             return false
         }
     }
@@ -31,7 +39,7 @@ export const Card = (s) => {
     const [opened, setOpened] = useState(false);
     return (
         <>
-            {/* <Modal
+            <Modal
                     opened={opened}
                     onClose={() => setOpened(false)}
                     withCloseButton={false}
@@ -41,21 +49,26 @@ export const Card = (s) => {
                     padding={0}
                     >
                     vyehj
-                </Modal> */}
-                <div className="content-flex">
-                <div className="grid-content">  
+                </Modal>
+            <div className="content-flex" style={{margin:"2rem"}}>
+                <div style={{ fontSize: "xx-large", textAlign: "center", padding: "2rem" }}>
+                    {s.name}
+                </div>
+                <div className="grid-content">
                     <div className="grid-content-inside">
-                    {s.name}<br/>
-                    {s.disc}<br/>
-                    {s.name}<br/>
-                    {s.name}<br/>
-                    {s.name}<br/>
+                        <div style={{ fontSize: "medium", textAlign: "center" }}>
+                            <big>Discription-</big> {s.disc}
+                        </div>
+                        <div style={{ fontSize: "medium", textAlign: "center" }}>
+                            <big>Price-</big> <underline>{s.price} Eth</underline>
+                        </div>
+                        <button id="invest_btn" onClick={() => setOpened(true)} >Buy Now</button>
                     </div>
                     <div className="grid-content-inside">
-                        <img src={s.img} alt="yes"/>
+                        <img src={s.img} alt="yes" />
                     </div>
                 </div>
-                </div>
+            </div>
         </>
     )
 }
