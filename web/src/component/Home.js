@@ -1,14 +1,14 @@
 import React from 'react';
-import "./Home.css";
+import "../css/Home.css";
 
-function Home() {
+function Landing() {
   return (
     <div className="Home">
         <div className="Home_container">
-        <img className="Home_image" src="/img/MacBook Pro 16_ - 1.png" alt="landing" />
+        <img className="Home_image" src="/img/Group 1 (1).png" alt="landing" />
         </div>
     </div>
   )
 }
 
-export default Home;
+export default Landing;
