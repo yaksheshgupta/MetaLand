@@ -1,0 +1,8 @@
+.foter{
+text-align: center;
+display: flex;
+justify-content: space-between;
+}
+.ul{
+    display: flex;
+}
