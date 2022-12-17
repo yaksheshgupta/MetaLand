@@ -73,7 +73,8 @@ export const Card = (s) => {
                         <button id="invest_btn" onClick={() => setOpened(true)} >Buy Now</button>
                     </div>
                     <div className="grid-content-inside">
-                        <img src={s.img} alt="yes" />
+                    <img src={s.img} alt="yes" />
+                        <a href="https://go.echo3d.co/SHSB"><button>See 3d Model</button></a>
                     </div>
                 </div>
             </div>
