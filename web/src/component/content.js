@@ -9,19 +9,27 @@ export function Content() {
                 Content
             </div>
             <div className="content"  >
-            <div style={{ fontSize: "xx-large", textAlign: "center", color: "whitesmoke", margin: "2rem" }}>
-                BestSellers!!
-            </div>
-            <div>
-                {JsonData.product.map(s => {
-                    return (
-                        <>
-                            <Card key={s.disc} {...s} />
-                        </>
-                    )
-                })}
+                <div style={{ fontSize: "xx-large", textAlign: "center", color: "whitesmoke", margin: "2rem" }}>
+                    BestSellers!!
                 </div>
-                4gr
+                <div>
+                    {JsonData.product.map(s => {
+                        return (
+                            <>
+                                <Card key={s.disc} {...s} />
+                            </>
+                        )
+                    })}
+                </div>
+                <div style={{ fontSize: "x-large", textAlign: "center", padding: "2rem", backgroundColor: "grey", margin: "2rem", }}>
+                   Sell your Aseests
+                    <br />
+                    <a href="/sell">
+                        <button>
+                            Start the process
+                        </button>
+                    </a>
+                </div>
             </div>
         </>
     )
@@ -40,17 +48,17 @@ export const Card = (s) => {
     return (
         <>
             <Modal
-                    opened={opened}
-                    onClose={() => setOpened(false)}
-                    withCloseButton={false}
-                    styles={{ modal: { backgroundColor: "rgba(0,0,0,0.8)" } }}
-                    centered
-                    fullScreen
-                    padding={0}
-                    >
-                    vyehj
-                </Modal>
-            <div className="content-flex" style={{margin:"2rem"}}>
+                opened={opened}
+                onClose={() => setOpened(false)}
+                withCloseButton={false}
+                styles={{ modal: { backgroundColor: "rgba(0,0,0,0.8)" } }}
+                centered
+                fullScreen
+                padding={0}
+            >
+                vyehj
+            </Modal>
+            <div className="content-flex" style={{ margin: "2rem" }}>
                 <div style={{ fontSize: "xx-large", textAlign: "center", padding: "2rem" }}>
                     {s.name}
                 </div>

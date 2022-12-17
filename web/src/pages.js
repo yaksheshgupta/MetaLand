@@ -1,6 +1,7 @@
+import Footer from "./component/footer";
 import {Content,Card} from "./component/content";
+import Landing from "./component/Home";
 import Navbar from "./component/navbar";
-import Landing from "./component/home";
 import Form from "./component/form";
 import { About } from "./component/about";
 export const Home = ()=>{
@@ -10,6 +11,7 @@ export const Home = ()=>{
         <Landing/>
         <Content/>
         <About/>
+        <Footer/>
         {/* <Card/> */}
         </>
     )
@@ -19,7 +21,7 @@ export const Frm = ()=>{
         <>
         <Navbar/>
         <Form/>
-        {/* <Landing/> */}
+        <Footer/>
 
         </>
     )
