@@ -2,6 +2,8 @@ import "../css/content.css"
 import { useState } from "react"
 import { Modal } from "@mantine/core";
 import JsonData from "../data"
+import Buy from "./buy";
+
 export function Content() {
     return (
         <>
@@ -56,7 +58,7 @@ export const Card = (s) => {
                 fullScreen
                 padding={0}
             >
-                vyehj
+                <Buy {...s} />
             </Modal>
             <div className="content-flex" style={{ margin: "2rem" }}>
                 <div style={{ fontSize: "xx-large", textAlign: "center", padding: "2rem" }}>
