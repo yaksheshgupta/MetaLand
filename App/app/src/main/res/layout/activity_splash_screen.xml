@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iphone_14_pro_max___2"
+    tools:context=".splashScreen"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="130dp"
+            android:layout_marginVertical="75dp"
+            android:src="@drawable/ic_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MetaLand"
+            android:textColor="#ffff"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
